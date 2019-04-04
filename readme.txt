@@ -1,12 +1,12 @@
 1.登陆GitHub
 2.创建repository（仓库）
 3.git绑定用户
-	$ git config --global user.name "Shengbao-Zhang"
-	$ git config --global user.email 1114259863@qq.com
+	$ git config --global user.name "name"
+	$ git config --global user.email xxxx@qq.com
 4.设置ssh key
 	4-1 生成ssh key
 		先检查是否存在  $ cd ~/.ssh
-		如果不存在     $ ssh-keygen -t rsa -C  "1114259863@qq.com"
+		如果不存在     $ ssh-keygen -t rsa -C  "xxxx@qq.com"
 	4-2 在GitHub上添加ssh key（new ssh key）
 		Title:对应本地文件夹
 		key:C:\Users\username\.ssh粘贴密钥
@@ -17,7 +17,7 @@
 　　		git add README.md //文件添加到仓库
 　　		git add . //不但可以跟单一文件，还可以跟通配符，更可以跟目录。一个点就把当前目录下所有未追踪的文件全部add了 
 　　		git commit -m "first commit" //把文件提交到仓库，双引号内是提交注释。
-　　		git remote add origin git@github.com:wangjiax9/practice.git //关联远程仓库
+　　		git remote add origin git@github.com:xxxx/xxxx.git //关联远程仓库
 		如果上一步远程仓库关联错误，可以$ git remote rm origin之后重新关联
 　　		git push -u origin master //把本地库的所有内容推送到远程库上
 6.更新本地项目到远程库
